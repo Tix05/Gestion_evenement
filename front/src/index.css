@@ -1,3 +1,82 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@layer tailwind-base, primereact, tailwind-utilities;
+
+@layer tailwind-base {
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/front/src/assets/fonts/Poppins-Regular.ttf');
+    font-family: 'Parkinsans';
+    src: url('/front/src/assets/fonts/Parkinsans-Regular.ttf');
+  }
+}
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
+
+body {
+  margin: 0;
+}
+
+
+.p-inputtext {
+  width: 18rem !important;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.p-inputtext:focus {
+  border-color: #c13bf6;
+  box-shadow: 0 0 0 4px rgba(165, 59, 246, 0.3);
+}
+
+.p-password {
+  width: 18rem !important;
+  border-radius: 4px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.p-password:focus {
+  border-color: #c13bf6;
+  box-shadow: 0 0 0 4px rgba(165, 59, 246, 0.3);
+}
+
+.p-password .p-inputtext {
+  width: 100% !important;
+}
+
+.button-scale {
+  display: inline-block; 
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button-scale:hover {
+  transform: scale(1.05);
+
+}
+
+.button-scale:active {
+  transform: scale(0.95);
+}
+.link-scale {
+  display: inline-block; 
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.link-scale:hover {
+  transform: scale(1.05);
+
+}
+
+.link-scale:active {
+  transform: scale(0.95);
+}
+
