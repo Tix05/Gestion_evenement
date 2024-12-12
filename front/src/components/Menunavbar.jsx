@@ -29,7 +29,7 @@ const Menunavbar = () => {
 
             <div className="flex items-center space-x-4">
                 <button className="p-[2px] rounded-full hover:bg-purple-300">
-                    <FiBell className="text-xl text-gray-800" />
+                    <FiBell className="text-xl text-gray-800" /> ok
                 </button>
                 <Avatar
                     image="https://randomuser.me/api/portraits/men/41.jpg"
